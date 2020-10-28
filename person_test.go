@@ -17,7 +17,7 @@ func TestNewPerons(t *testing.T) {
 	sato, _ := NewPerson("佐藤", "太郎", "男", birthday)
 	yamada, _ := NewPerson("", "", "女", birthday)
 
-	// Person構造体の中にある返り値が返ってきているのかどうかをテスト
+	// NewPerson関数でPerson構造体の中にある返り値が返ってきているのかどうかをテスト
 	t.Log("setup") // <setup code>
 	t.Run("NewPerson/佐藤/太郎/男/1996-10-11", func(t *testing.T) {
 		if sato.FamilyName != "佐藤" {
